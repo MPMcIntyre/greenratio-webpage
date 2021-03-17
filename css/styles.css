@@ -3,6 +3,8 @@ body {
 }
 
 .centerbox {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     width: 50%;
     border: 3px solid  rgba(105, 105, 105, 0);
@@ -15,39 +17,41 @@ body {
 
 
 .message-box {
+
     height: 100px;
     text-align: center;
     align-self: center;
-    flex: content;
     flex-direction: column;
     border: 5px 2px 1px 0px black;
 }
 
 #contact-box {
-    font-size: 1.5em;
+    font-size: 17px;
 }
 
 .text {
     vertical-align: middle;
-    font-size: 2em; 
+    font-size: 17px; 
     color: aliceblue;
 }
 
 .table-text {
     vertical-align: middle;
-    font-size: 1.5em; 
+    font-size: 17px; 
     color: aliceblue;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
+    flex: content;
     background-color: #333;
+    flex-direction: row;
+    padding: 14px 16px;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -88,3 +92,11 @@ body {
     0%   {opacity: 0%;}
     100% {opacity: 100%;}
   }
+
+.permalink {
+    white-space: pre-wrap; /* CSS3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
