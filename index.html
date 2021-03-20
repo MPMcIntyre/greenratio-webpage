@@ -7,27 +7,202 @@
     <meta name="keywords" content="micro-greens, microgreens, hydroponics, aeroponics">
     <meta name="author" content="Michael McIntyre">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenRatio</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Bootstrap Javascript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Lato:wght@100;400;900&family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+
+    <script src="https://kit.fontawesome.com/eb3cadbdd0.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Stylesheet -->
+
     <link rel="stylesheet" href="css/styles.css">
+
+    <title>GreenRatio</title>
 </head>
+
 <body>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="news.html">News</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="store.html">Store</a>
-    </div>
+    <header>
+   
 
+    <section id="title" class="greybox">
+        <!-- Nav Bar -->
 
-    <div class="centerbox">
+        <div class="container-fluid">
 
-        <span class="text">
-            <img src="https://raw.githubusercontent.com/MPMcIntyre/greenratio-webpage/main/Logo_dark.png" width="80%">
+            <nav class="navbar navbar-expand-md navbar-dark navbar-colour">
+
+                <a class="navbar-brand" href=""> <span class="greentext">GREEN</span><span class="greytext">RATIO</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item align-content-end">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
             <br>
-            This page is under construction!
-        </span>
+            <div class="row title-image-padding">
+                <div class="col-lg-4 col-md-4 title-text align-self-center">
+                    <p class="catchphrase-a greytext">Paving the way to affordable nutrition for all.</p>
+                </div>
+                <div class="col-lg-8 col-md-8 h100 align-self-center">
+                    <img class="title-image" src="Images/dark_logo.png" alt="logo">
+                </div>
+                
+            </div>
+            <br>
+
+
+        </div>
+        
+
+
+    </section>
+
+</header>
+
+<section id="about" class="whitebox">
+    <div class="container-fluid">
+        <h2 class="description"> Green Ratio is a South African based start-up company aimed
+            at providing quality microgreens at an affordable price.
+            Microgreens are nutritious and flavorful! Why not incorporate them into your meals?</h2>
     </div>
+
+        
+    </span> 
+</div>    
+</section>
+
+<section id="features">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6">
+          <i class="fas fa-seedling fa-5x media-icons"></i>
+          <h3 class="feature-headers">Fast and fresh.</h3>
+          <p class="features-text">Local delivery ensures freshness of our product.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <i class="fas fa-arrow-right  fa-5x media-icons"></i>
+          <h3 class="feature-headers">On demand.</h3>
+          <p class="features-text">Our fast turnover times ensure we always have produce.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <i class="fas fa-recycle fa-5x media-icons"></i>
+          <h3 class="feature-headers">Sustainable.</h3>
+          <p class="features-text">We pride ourselfs on minimal environmental impacts.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <i class="fas fa-sync-alt fa-5x media-icons"></i>
+            <h3 class="feature-headers">Year-round production.</h3>
+            <p class="features-text">Our labs allow us to offer produce in any season.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+
+
+
+    
+    <div id="image-carousel" class="carousel slide data-bs-ride=false">
+      <div class="container-fluid">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="testimonial-quote">
+              Rapid production of micro greens.</h2>
+            <img class="testimonial-image" src="images/array-of-greens.jpg" alt="array-of-greens">
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-quote">
+                Increased sustainability by decreasing monoculture farming.
+            </h2>
+            <img class="testimonial-image " src="images/monoculture.jpg" alt="monoculture-farm">
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-quote">
+                Proven to be rich in nutrients, capable of suplimenting any diet.
+            </h2>
+            <img class="testimonial-image" src="images/conventional-farm.jpg" alt="conventional-farm">
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-quote">
+                Reduced risk of food poisoning with state-of-the-art controlled environments.
+            </h2>
+            <img class="testimonial-image" src="images/plate-of-greens.jpg" alt="plate-of-greens">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="greybox" id="footer">
+      <div class="container-fluid">
+
+
+          <h2 class="cta-bold greytext description"> Follow us and join the movement!</h3>
+          <div class="fluid-container">
+              <a href="mailto:mp.mcintyre201@gmail.com"> <i class="fas fa-envelope media-icons greytext""></i> </a>
+              <i class="fab fa-twitter media-icons greytext"></i>
+              <i class="fab fa-facebook-f media-icons greytext""></i>
+              <i class="fab fa-instagram media-icons greytext""></i>
+          </div>
+      </div>
+      <p style="margin:0;">© Copyright 2021 GreenRatio</p>
+
+  </footer>
+  
+
+
 </body>
 
 </html>

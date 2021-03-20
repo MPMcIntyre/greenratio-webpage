@@ -1,89 +1,103 @@
 body {
-    background-color: rgb(90, 90, 90);
+    background-color: white;
+    text-align: center;
 }
 
-.centerbox {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 50%;
-    border: 3px solid  rgba(105, 105, 105, 0);
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-    animation-name: fade-in;
-    animation-duration: 3s;
-  }
+h1{
+  font-size: 3em;
+}
+
+h1, h2, h3, h4 ,h5, h6, p {
+  font-family: 'Poppins', sans-serif;
+  hyphens: auto;
+}
 
 
-.message-box {
+/* NAVBAR */
+.navbar-colour {
+  background-color: rgb(90, 90, 90);
+}
 
-    height: 100px;
-    text-align: center;
-    align-self: center;
-    flex-direction: column;
-    border: 5px 2px 1px 0px black;
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  word-spacing: 1rem;
+}
+
+/* TITLE */
+
+.title-image {
+  width: 100%;
+}
+
+
+.title-text {
+  color: #8f8f8f;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.catchphrase-a {
+  text-align: right;  
+  padding: 5rem 0 5rem 0;
+}
+.catchphrase-b {
+  text-align: center;  
+  padding: 0rem 0 5rem 0;
+}
+
+.title-image-padding {
+  vertical-align: middle;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-inner .item {
+  height: 400px;
+  width: 100%;
+}
+
+.carousel-inner > .item >img{
+  min-height : 300px;
+  max-height : 300px;
+  color:rgb(90, 90, 90);
+}
+
+.testimonial-image {
+  height: 500px;  
 }
 
 #contact-box {
     font-size: 17px;
 }
 
-.text {
-    vertical-align: middle;
-    font-size: 17px; 
-    color: aliceblue;
-}
-
-.table-text {
-    vertical-align: middle;
-    font-size: 17px; 
-    color: aliceblue;
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-    flex: content;
-    background-color: #333;
-    flex-direction: row;
-    padding: 14px 16px;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #808080;
-    color: white;
-  }
-
-  table, th, td {
-    border: 1px solid rgb(255, 255, 255);
-    border-collapse: collapse;
-    color: aliceblue;
-  }
 
   a:link {
-    color: rgb(156, 156, 156);
+    color: #2F4F4F;
     background-color: transparent;
     text-decoration: none;
   }
   a:visited {
-    color: rgb(156, 156, 156);
+    color: #2F4F4F;
     background-color: transparent;
     text-decoration: none;
   }
@@ -99,4 +113,94 @@ body {
     white-space: -pre-wrap; /* Opera 4-6 */    
     white-space: -o-pre-wrap; /* Opera 7 */    
     word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.construction {
+  padding-top: 50px;
+}
+
+
+/* FOOTER */
+
+.media-icons {
+  padding: 50px 20px 20px;
+  color: #2F4F4F;
+}
+
+
+
+/* UTILITIES */
+
+.greentext {
+  color: #A9FF33;
+}
+
+.greytext {
+  color: rgb(192,192,204); 
+}
+
+.description {
+  padding-top: 5%;
+}
+
+div.c {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.greybox {
+  background-color: rgb(90, 90, 90);
+  box-shadow: 5px 2px 4px #000000;
+  color:#8f8f8f;
+}
+
+.whitebox {
+  background-color: white;
+  color:#2F4F4F;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+
+@media (max-width: 1275px) {
+
+  .title-text {
+    color: #8f8f8f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 1075px) {
+
+  .title-text {
+    color: #8f8f8f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 861px) {
+  .title-text {
+    color: #8f8f8f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .catchphrase-a {
+    text-align: center;  
+    padding: 5rem 0 5rem 0;
+  }
 }
